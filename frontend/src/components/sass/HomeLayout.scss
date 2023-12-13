@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.MyFont{
+  font-family: "Arimo", sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+
+  &-left {
+    flex-direction: column;
+    color: white;
+    width: 23%;
+    height: 100vh;
+
+    &-nav {
+      flex-direction: column;
+      background-color: #121212;
+      border-radius: 10px;
+      margin-top: 10px;
+      padding: 5px;
+      justify-content: left;
+      align-items: left;
+      display: flex;
+      height: 100px;
+      cursor: pointer;
+    }
+  }
+ 
+
+}
+.nav-icon {
+  flex-direction: row;
+  margin: 10px;
+
+  &-title {
+    padding-left: 20px;
+    font-size: large;
+    font-family: "Arimo", sans-serif;
+  }
+}
+
+.library {
+  flex-direction: row;
+  background-color: #121212;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 20px;
+  font-family: "Arimo", sans-serif;
+
+  &-head {
+    flex-direction: column;
+
+
+    
+  }
+
+  &-quick-access{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    margin-top: 25px;
+    
+    
+  }
+
+  &-head-title {
+    font-family: "Arimo", sans-serif;
+    padding-left: 20px;
+    color: #a7a7a7;
+  }
+
+  &-head-navigation{
+    flex-direction: column;
+    float: right;
+    border-radius: 20px;
+
+    &-icon{
+      padding-right: 15px;
+      
+    }
+  }
+
+  
+  
+}
+.quickBtn{
+  background-color: #232323;
+  border-radius: 15px;
+  padding: 9px;
+  font-family: "Arimo", sans-serif;
+  float: left;
+
+  font-size: small;
+}
+
+.content-main {
+  width: 80%;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #121212;
+
+  &-navbar {
+    height: 70px;
+    background-color: aqua;
+    
+    
+  }
+  &-nav-input{
+    text-align: left;
+    padding-left: 10px;
+    
+    outline: "white";
+  }
+  
+}
+.content-navbar-right{
+  
+ font-family: "Arimo", sans-serif;;
+}
+
+.songs{
+  max-height: 660px; /* Set the maximum height for the scrollable section */
+  overflow-y: auto;
+  
+}
+
+
+
+.songs::-webkit-scrollbar {
+  width: 10px;
+}
+
+.songs::-webkit-scrollbar-track {
+  background: #121212; 
+}
+
+.songs::-webkit-scrollbar-thumb {
+  background:transparent;
+}
+
+.songs:hover::-webkit-scrollbar-thumb {
+  background: #a7a7a7; 
+}
+
+.temp{
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  
+}
+
