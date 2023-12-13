@@ -46,6 +46,7 @@ const Controler = () => {
         max={3 || 0}
         
       />
+      {/* comments only */}
       <span className="mt-2 text-white pl-2">4:44</span>
       </div>
         
