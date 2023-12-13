@@ -130,7 +130,25 @@
   
 }
 
+// Stylish scrollbar
 
+.scrollBar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollBar::-webkit-scrollbar-track {
+  background: #121212; 
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+  background:transparent;
+}
+
+.scrollBar:hover::-webkit-scrollbar-thumb {
+  background: #a7a7a7; 
+}
+
+// comments
 
 .songs::-webkit-scrollbar {
   width: 10px;
