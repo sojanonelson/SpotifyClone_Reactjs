@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import QuickWidget from "../../widget/QuickWidget";
 const ContentLeft = () => {
   return (
     <div className="content-left">
@@ -22,7 +23,7 @@ const ContentLeft = () => {
         </div>
       </div>
       <div className="library">
-        <div className="library-head">
+        <div className="library-head p-2">
           <FontAwesomeIcon size="lg" color="#A7A7A7" icon={faBookmark} />
           <span className="library-head-title">Your Library</span>
           <span className="library-head-navigation">
@@ -44,21 +45,20 @@ const ContentLeft = () => {
             <button className="quickBtn ml-4">Artists</button>
             <button className="quickBtn ml-4">Podcasts & Shows</button>
           </div>
-          <div className="songs bg-red-700 mt-2 ">
-            <div className="bg-blue-300 h-20">a</div>
-            <div className="bg-blue-400 h-20">b</div>
-            <div className="bg-blue-500 h-20">c</div>
-            <div className="bg-blue-600 h-20">d</div>
-            <div className="bg-blue-700 h-20">e</div>
-            <div className="bg-blue-800 h-20">f</div>
-            <div className="bg-blue-900 h-20">g</div>
-            <div className="bg-blue-300 h-20">a</div>
-            <div className="bg-blue-400 h-20">b</div>
-            <div className="bg-blue-500 h-20">c</div>
-            <div className="bg-blue-600 h-20">d</div>
-            <div className="bg-blue-700 h-20">e</div>
-            <div className="bg-blue-800 h-20">f</div>
-            <div className="bg-blue-900 h-20">g</div>
+          <div className="songs flex flex-col mt-2 ">
+            <QuickWidget/>
+            <QuickWidget/>
+            <QuickWidget/>
+            <QuickWidget/>
+            <QuickWidget/>
+            <QuickWidget/>
+            <QuickWidget/>
+            <QuickWidget/>
+            <QuickWidget/>
+            <QuickWidget/>
+            <QuickWidget/>
+            <QuickWidget/>
+            <QuickWidget/>
           </div>
         </div>
       </div>
