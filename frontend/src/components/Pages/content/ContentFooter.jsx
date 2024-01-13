@@ -7,7 +7,7 @@ const ContentFooter = () => {
         window.open(url, '_blank');
       };
   return (
-    <div className='bg-[#131218]  flex-col p-10 pb-32 flex'>
+    <div className='bg-[#131218]    flex-col p-10 pb-44 flex'>
         <div className='flex flex-row'>
         <div className='flex flex-col mx-8 justify-left '>
             <h1 className='MyFont text-white font-extrabold text-1xl'>Company</h1>

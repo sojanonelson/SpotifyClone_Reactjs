@@ -1,63 +1,62 @@
-import React from 'react'
+import React from 'react';
 import {
-     
-    faChevronLeft,
-    faChevronRight,
-    faBell,
-  } from "@fortawesome/free-solid-svg-icons";
-  import "../sass/HomeLayout.scss"
-  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-  import profile from "../../images/profile.jpeg";
+  faChevronLeft,
+  faChevronRight,
+  faBell,
+} from "@fortawesome/free-solid-svg-icons";
+import "../sass/HomeLayout.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import profile from "../../images/profile.jpeg";
 
 function Navbar() {
   return (
-    <div className='flex bg-[#121212] w-full h-16 mt-1  justify-center items-center'>
-      
-      
-        <nav className="content-navbar mb-3  p-2  w-full  ">
-          <div className="float-left flex ">
+    <div className='flex bg-[#121212] w-full h-16 mt-1 rounded-tl-md rounded-tr-md justify-center items-center'>
+
+      <nav className="content-navbar mb-3 p w-full">
+        <div className="md:flex md:items-center">
+          <div className="md:w-3/3 flex ">
             <FontAwesomeIcon
-              className="ml-6 mt-3  cursor-pointer rounded-full p-3 bg-black"
+              className="ml-1 mt-3 cursor-pointer rounded-full p-2 bg-black"
               color="#a7a7a7"
               icon={faChevronLeft}
             ></FontAwesomeIcon>
             <FontAwesomeIcon
-              className="ml-2 mt-3 cursor-pointer rounded-full p-3 bg-black"
+              className="ml-1 mt-3 cursor-pointer rounded-full p-2 bg-black"
               color="#a7a7a7"
               icon={faChevronRight}
             ></FontAwesomeIcon>
-            <div>
-              <input
-                className=" mt-2 content-main-nav-input bg-[#242424] ml-4 w-[350px] h-9 p-6  rounded-full  "
-                placeholder="What do you want to listen to?"
-              ></input>
-            </div>
           </div>
-
-          <div className="float-right flex-row flex">
-            <button className="bg-white text-black text-sm px-3 font-medium hover:h-10 hover:text-[0.900rem] transition duration-300   mt-3 h-9  rounded-full content-navbar-right">
+          <div className="md:w-3/3 px-2 mt-3">
+            <input
+              className="content-main-nav-input bg-[#242424] ml-4 w-full md:w-[350px] h-9 p-6 rounded-full"
+              placeholder="What do you want to listen to?"
+            ></input>
+          </div>
+          <div className="md:w-2/3 flex justify-end items-center mt-3">
+            <button className="bg-white text-black text-sm px-3 font-medium hover:h-10 hover:text-[0.900rem] transition duration-300 h-9 rounded-full content-navbar-right">
               Explore Premium
             </button>
-            <button className="bg-black text-white mx-2 mt-3 px-3 h-9 rounded-full content-navbar-right">
+            <button className="bg-black text-white mx-2 px-3 h-9  rounded-full content-navbar-right">
               Install App
             </button>
             <FontAwesomeIcon
-              className="m-1 cursor-pointer rounded-full p-3 mt-3 ml-1 bg-black"
+              className="m-1 cursor-pointer rounded-full p-3 ml-1 bg-black"
               color="#a7a7a7"
               icon={faBell}
             ></FontAwesomeIcon>
             <button>
               <img
-                className="w-8 rounded-full  "
+                className=" w-8 mx-1 rounded-full"
                 src={profile}
                 alt="profile"
               ></img>
             </button>
           </div>
-        </nav>
-      
+        </div>
+      </nav>
+
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
