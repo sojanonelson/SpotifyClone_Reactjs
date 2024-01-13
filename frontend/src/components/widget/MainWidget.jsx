@@ -2,7 +2,7 @@ import React from 'react';
 
 const MainWidget = (props) => {
   return (
-    <div className='bg-[#242424] transition duration-300 hover:bg-[#696969] cursor-pointer flex-row justify-center mx-3 w-full items-center rounded-sm md:w-1/2 lg:w-1/3 xl:w-1/4'>
+    <div className='bg-[#242424] transition duration-300 hover:bg-[#696969] cursor-pointer flex-row justify-center my-1 mx-3 w-full items-center rounded-sm md:w-1/2 lg:w-1/3 xl:w-1/4'>
       <img src={props.image} alt="image" className='select-none float-left rounded-l-sm w-14'></img>
       <div className='justify-center items-center'>
         <span className='Myfont float-left m-4 select-none text-white'>{props.title}</span>
