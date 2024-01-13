@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/HomeLayout.scss";
 import Navbar from "../Navbar/Navbar";
 import ContentLeft from "../Pages/content/ContentLeft";
 import ContentMain from "../Pages/content/ContentMain";
@@ -8,22 +7,27 @@ import ContentFooter from "../Pages/content/ContentFooter";
 
 const HomeLayout = () => {
   return (
-    <div className="content">
+    <div className="flex flex-col md:flex-row">
+      {/* Content Left */}
+      
       <ContentLeft />
+      
 
-      <div className="content-main w-full  flex flex-col">
+      {/* Main Content */}
+      <div className="flex flex-col p-2 md:flex-grow">
+        {/* Navbar */}
         <Navbar />
 
-        <div className="overflow-x-auto flex rounded-sm scrollBar  flex-col max-h-[830px]">
+        {/* Content Main and Footer */}
+        <div className="md:flex overflow-x-auto flex-col main  h-screen  rounded-sm ">
           <ContentMain />
-          <ContentFooter/>
-          
+          <ContentFooter />
         </div>
-        
-        
       </div>
-      <div className="Controler fixed w-full inset-x-0 bottom-0">
-        <Controler/>
+
+      {/* Control Bar */}
+      <div className="fixed bottom-0 w-full">
+        <Controler />
       </div>
     </div>
   );
