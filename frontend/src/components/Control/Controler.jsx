@@ -6,6 +6,7 @@ import "../sass/Controler.scss";
 import audio from "../../Data/perfect.mp3"
 import { useState } from "react";
 
+
 import {
   faShuffle,
   faRepeat,
