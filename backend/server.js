@@ -10,9 +10,11 @@ const songRouter = require("./routes/song");
 const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
 const jwt = require("jsonwebtoken")
+const cors = require("cors");
 
 require('./config/passports')(passport)
 app.use(passport.initialize());
+app.use(cors());
 // db connect
 mongoose
   .connect(process.env.MONGO_URL, {
